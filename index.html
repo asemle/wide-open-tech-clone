@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="icon" type="image/png" href="../media/wot-favicon-20*20.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:400,600,700,800|Oswald:300,400" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <title>Wide Open Tech - Internet Technology Experts in eCommerce, Development</title>
@@ -27,20 +27,28 @@
       <h1 class="masthead-top">
         <small>YOUR DIGITAL</small></br>
         <span class="main">WORKSHOP</span></br>
-        <span class="sub">
-          Building Business 
+        <div class="whitebar"></div>
+          <span class="sub">
+          Building Business
           <em>Solutions</em>
            & Bright
           <i>Ideas</i>
         </span>
+        <div class="whitebar"></div>
       </h1>
       <div class="masthead-bottom">
         <div class="green-button">Learn More</div>
       </div>
     </div>
-    <div class="mission"> Wide Open Technologies brings enterprise-level technology</br>
+    <div class="mission-box"> <p>Wide Open Technologies brings enterprise-level technology</br>
     to small and mid-sized companies – building the digital technology that
-    solves unique problems, works better and turns ideas into functional reality.
+    solves unique problems, works better and turns ideas into functional reality.</p>
+      <div class="under-mission">
+        <div class="icon">
+          <img src="./media/icon.png" alt="thingy"/>
+          HERE'S HOW IT <em>WORKS</em>
+        </div>
+      </div>
     </div>
 
 
@@ -51,5 +59,22 @@
 
 
   </div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 3) {
+                  $('.header').css("background-color", "white");
+                  $('.headerbox ul li a').css("color", "gray");
+                }
+                else {
+                  $('.header').css("background-color", "transparent");
+                  $('.headerbox ul li a').css("color", "white");
+                }
+          });
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>
