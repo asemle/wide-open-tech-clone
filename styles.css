@@ -81,6 +81,11 @@
   color: white;
 }
 
+.headerbox ul li a:hover{
+  border-bottom: 4px solid #bdd436;
+  color: #6A787C;
+}
+
 .masthead-top{
   margin: 0 auto 0 auto;
   height: 420px;
@@ -156,7 +161,10 @@ i {
   padding-top: 12px;
   padding-bottom: 0;
   border-radius: 62px;
+}
 
+.green-button:hover {
+  background: #C8E23A;
 }
 
 .mission-box {
